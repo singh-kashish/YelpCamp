@@ -8,7 +8,8 @@ var bodyParser =      require("body-parser"),
 app.use(bodyParser.urlencoded({extended:true}));
 //mongoose
 var mongoose   =      require("mongoose");
-mongoose.connect("mongodb+srv://KASHISH:Gabbar@1212@yelpcamp.rtsyy.mongodb.net/YelpCamp?retryWrites=true&w=majority",{useUnifiedTopology:true,useNewUrlParser:true});
+mongoose.connect("mongodb+srv://KASHISH:Gabbar@1212@yelpcamp.rtsyy.mongodb.net/YelpCamp?retryWrites=true&w=majority",{useUnifiedTopology:true,useNewUrlParser:true}).then(()=>{
+	console.log("connected to db")}).catch(err=>{console.log("ERROE",err.message)});
 var flash=require("connect-flash")
 
 var Campground =      require("./models/campground"),
