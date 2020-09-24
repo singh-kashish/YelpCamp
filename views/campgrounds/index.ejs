@@ -9,11 +9,14 @@
 
 
 
-<div class="container-fluid">
+<div id="abc" class="container-fluid px-0">
 	
 		<header class="jumbotron">
+			<div id="index_jumbotron">
+				
+			
 		<h1>
-			Welcome to YelpCamp
+			Campgrounds
 		</h1>
 		<p>
 			View our hand-picked campgrounds from all over the world
@@ -21,12 +24,13 @@
 		<p>
 			<a href="/campgrounds/new" class="btn btn-primary btn-lg">Add New Campground</a>	
 		</p>
-		
+		</div>
+			
 		</header>
 </div>
 		<div class="row px-2 text-center d-flex flex-wrap justify-content-around">
 		<% campgrounds.forEach(function(campground){%>
-			<div class="col-md-3 col-sm-6">
+			<div class="col-lg-3 col-md-4 col-sm-6">
 				<div class="figure">
 					<img class="img-thumbnail" src="<%=campground.image%>">
 				<div class="figure-caption">
