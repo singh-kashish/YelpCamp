@@ -1,5 +1,5 @@
 # YelpCamp
-	- It has been created using BOOTSTRAP v4.5 for the fornt end,and nodeJS,mongoDb,express,passport,etc for the backend(for the full list,check out dependencies).
+	- It has been created using BOOTSTRAP v4.5 for the front end,and nodeJS,mongoDb,express,passport,etc for the backend(for the full list,check out dependencies).
 	- Users can sign up/login, add campgrounds with price name,etc.
 	- Users can also comment on campgrounds.
 	- Edit and Delete permisions are only given to the people who have made those comments or submitted the campgrounds.
